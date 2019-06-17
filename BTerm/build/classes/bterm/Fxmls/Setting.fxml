@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane1" fx:id="anchor_Setting" prefHeight="130.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bterm.SettingController">
+    <children>
+    
+      <ComboBox fx:id="parity" layoutX="265.0" layoutY="72.0" onAction="#ParityChanged" prefHeight="25.0" prefWidth="106.0" promptText="NONE" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="72.0" />
+      <ComboBox fx:id="stop" layoutX="80.0" layoutY="34.0" onAction="#StopChanged" prefHeight="25.0" prefWidth="50.0" promptText="1" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="34.0" />
+      <ComboBox fx:id="data" layoutX="80.0" layoutY="75.0" onAction="#DataChanged" prefHeight="25.0" prefWidth="41.0" promptText="8" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="75.0" />
+      <ComboBox fx:id="flowControl" layoutX="265.0" layoutY="33.0" onAction="#flowControlChanged" prefHeight="25.0" prefWidth="106.0" promptText="NONE" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="33.0" />
+      <Label layoutX="187.0" layoutY="78.0" prefHeight="17.0" prefWidth="69.0" text="Parity" AnchorPane.rightAnchor="211.0" AnchorPane.topAnchor="78.0" />
+      <Label layoutX="23.0" layoutY="77.0" prefHeight="17.0" prefWidth="33.0" text="Data" AnchorPane.rightAnchor="397.0" AnchorPane.topAnchor="77.0" />
+      <Label layoutX="23.0" layoutY="38.0" prefHeight="17.0" prefWidth="41.0" text="Stop" AnchorPane.rightAnchor="389.0" AnchorPane.topAnchor="38.0" />
+      <Label layoutX="181.0" layoutY="39.0" prefHeight="17.0" prefWidth="81.0" text="Flow Control" AnchorPane.rightAnchor="205.0" AnchorPane.topAnchor="39.0" />
+      <Button fx:id="dsr_btn" layoutX="409.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleDSRButon" text="DSR" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="33.0" />
+      <Button fx:id="dtr_btn" layoutX="409.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleDTRButon" text="DTR" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="72.0" />
+     
+      <Separator layoutX="147.0" layoutY="21.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="5.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="21.0" />
+      <Separator layoutX="382.0" layoutY="21.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="0.0" AnchorPane.rightAnchor="79.0" AnchorPane.topAnchor="21.0" />
+
+    </children>
+</AnchorPane>

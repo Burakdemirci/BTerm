@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="BTerm.jnlp">
+  <information>
+    <title>BTerm</title>
+    <vendor>Computer</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="BTerm.jar" size="53522" download="eager" />
+    <jar href="lib\RXTXcomm.jar" size="60866" download="eager" />
+    <jar href="lib\jxl-2.6.12.jar" size="725735" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="bterm.MainApp"  name="BTerm" />
+  <update check="always"/>
+</jnlp>
